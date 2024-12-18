@@ -11,5 +11,5 @@ function App() {
     </>
   )
 }
-//kavin
+
 export default App
