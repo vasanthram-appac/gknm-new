@@ -1,7 +1,7 @@
 
-import './App.css'
+import './index.css'
 import Index from './components'
-function App() {
+function Appweb() {
 
   return (
     <>
@@ -12,4 +12,4 @@ function App() {
   )
 }
 
-export default App
+export default Appweb
