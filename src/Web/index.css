@@ -11,8 +11,23 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --dblue: #2B3990;
+  --green: #13A84A;
+  --red: #FF0000;
+  --lblue: #F1F4FF;
+  --lgrey: #595959;
 }
-
+h1, h2, h3, h4, h5, h6{
+  font-family: "Poppins", serif;color: #191B19;margin: 0;
+}
+p {
+  font-family: "Poppins", serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #595959;
+margin: 0;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -45,6 +60,79 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.mb2 {margin-bottom: 20px;}
+.mb3 {margin-bottom: 20px;}
+.mb4 {margin-bottom: 20px;}
+.mb5 {margin-bottom: 20px;}
+.mb6 {margin-bottom: 20px;}
+.mb7 {margin-bottom: 20px;}
+.mb15 {margin-bottom: 20px;}
+.mt40 {margin-top: 40px;}
+.pspace {padding: 100px 0;}
+.ch2 {    font-size: 42px;
+  line-height: 48px;
+  color: #191B19;
+  font-weight: 500;
+  letter-spacing: -1px;}
+
+  .cbtn {
+    padding: 10px 40px;
+    display: inline-flex;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-size: 15px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 9;
+    font-weight: 500;
+    background: var(--dblue);
+    color: #fff;
+    overflow: hidden;
+}
+.cbtn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--green);
+  transition: all 0.5s ease;
+  z-index: -1;
+  border-radius: 30px;
+}
+.cbtn:hover, .bbtn:hover {
+  color: #fff;
+}.cbtn:hover::after {
+  width: 100%;
+}
+.bbtn {
+  padding: 9px 40px;
+  display: inline-flex;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  font-size: 15px;
+  position: relative;
+  z-index: 9;
+  border: 1px solid var(--dblue);
+  border-radius: 30px;
+  color: var(--dblue);
+  overflow: hidden;
+}
+.bbtn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--dblue);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.bbtn:hover::after {width: 100%;}.btn-fl {display: flex;gap: 25px;}.container {width: 90%;margin: auto;}.grid2{display: grid;grid-template-columns: repeat(2, 1fr);gap: 60px;}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {

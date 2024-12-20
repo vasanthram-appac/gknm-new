@@ -1,33 +1,13 @@
-export function Index() {
-    return (
-        <>
-            <h2>data view</h2>
-        </>
-    );
-}
+import React, { useRef } from "react";
 
-export function Create() {
-    return (
-        <>
-            <h2>create</h2>
-        </>
-    );
-}
 
-export function Edit() {
-    return (
+function WorkReportTable(){
+    return(
         <>
-            <h2>edit</h2>
+         doctor
         </>
-    );
-}
-
-export function Delete() {
-    return (
-        <>
-            <h2>Delete</h2>
-        </>
-    );
+    )
 }
 
 
+export default WorkReportTable;
